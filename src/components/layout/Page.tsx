@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import Topbar from "../shared/Topbar";
-import Sidebar from "../shared/Sidebar";
+import Topbar from "./Topbar";
+import Sidebar from "./Sidebar";
 
 interface PageProps {
   children: ReactNode;
