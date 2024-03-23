@@ -1,4 +1,5 @@
 import { sidebarUrls } from "@/utils/urls";
+// import { LogOutIcon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
@@ -21,6 +22,14 @@ const Sidebar = () => {
           {link.name}
         </Link>
       ))}
+
+      {/* <div
+        className="p-2 flex gap-2 items-center text-xl 
+          hover:bg-accent rounded-[1rem] min-w-[15rem]"
+      >
+        <LogOutIcon />
+        Logout
+      </div> */}
     </div>
   );
 };

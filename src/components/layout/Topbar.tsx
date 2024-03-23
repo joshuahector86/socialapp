@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { ModeToggle } from "../theme/mode-toggle";
 import { Logo } from "@/assets";
 import SearchBar from "./SearchBar";
-import { AvatarIcon, Pencil2Icon, BellIcon } from "@radix-ui/react-icons";
+import { Pencil2Icon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
+import AvatarSettings from "../shared/AvatarSettings";
+import Notifications from "../shared/Notifications";
 
 const Topbar = () => {
   return (
@@ -20,12 +22,8 @@ const Topbar = () => {
         <Button variant={"ghost"} size="icon">
           <Pencil2Icon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
-        <Button variant={"ghost"} size="icon">
-          <BellIcon className="h-[1.2rem] w-[1.2rem]" />
-        </Button>
-        <Button variant={"ghost"} size="icon">
-          <AvatarIcon className="h-[1.2rem] w-[1.2rem]" />
-        </Button>
+        <Notifications />
+        <AvatarSettings />
       </div>
     </div>
   );

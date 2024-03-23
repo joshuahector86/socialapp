@@ -1,5 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import { Dashboard, Explore, Following, Posts, Profile } from "./Pages";
+import {
+  Dashboard,
+  Explore,
+  Following,
+  Posts,
+  Profile,
+  Settings,
+} from "./Pages";
 
 function App() {
   return (
@@ -10,6 +17,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/following" element={<Following />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </>
   );

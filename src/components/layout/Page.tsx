@@ -12,7 +12,7 @@ const Page: React.FC<PageProps> = ({ children }) => {
       <Topbar />
       <div className="flex">
         <Sidebar />
-        <div className="p-8">{children}</div>
+        <div className="p-8 flex flex-col flex-1 items-center">{children}</div>
       </div>
     </>
   );
