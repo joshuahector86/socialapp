@@ -3,6 +3,7 @@ import { ModeToggle } from "../theme/mode-toggle";
 import { Logo } from "@/assets";
 import SearchBar from "./SearchBar";
 import { AvatarIcon, Pencil2Icon, BellIcon } from "@radix-ui/react-icons";
+import { Button } from "../ui/button";
 
 const Topbar = () => {
   return (
@@ -14,11 +15,17 @@ const Topbar = () => {
         </div>
       </Link>
       <SearchBar />
-      <div className="flex gap-2 items-center ">
+      <div className="flex gap-1 items-center ">
         <ModeToggle />
-        <Pencil2Icon className="h-[1.2rem] w-[1.2rem]" />
-        <BellIcon className="h-[1.2rem] w-[1.2rem]" />
-        <AvatarIcon className="h-[1.2rem] w-[1.2rem]" />
+        <Button variant={"ghost"} size="icon">
+          <Pencil2Icon className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+        <Button variant={"ghost"} size="icon">
+          <BellIcon className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+        <Button variant={"ghost"} size="icon">
+          <AvatarIcon className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
       </div>
     </div>
   );
